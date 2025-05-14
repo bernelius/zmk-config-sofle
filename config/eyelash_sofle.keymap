@@ -27,6 +27,24 @@
             key-positions = <34 35 36>;
             bindings = <&kp ENTER>;
         };
+        compatible = "zmk,combos";
+        combo_inside_parens {
+            timeout-ms = <30>;
+            key-positions = <31 33>;
+            bindings = <&parens_inside>;
+        };
+        compatible = "zmk,combos";
+        combo_inside_brackets {
+            timeout-ms = <30>;
+            key-positions = <30 34>;
+            bindings = <&brackets_inside>;
+        };
+        compatible = "zmk,combos";
+        combo_inside_braces {
+            timeout-ms = <30>;
+            key-positions = <30 34>;
+            bindings = <&braces_inside>;
+        };
     };
     behaviors {
         lpar_rpar: leftparenthesis_rightparenthesis {
