@@ -96,8 +96,8 @@ layers:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - '&parens_inside'
-  - {t: '[', s: ']'}
-  - {t: '{', s: '}'}
+  - '&brackets_inside'
+  - '&braces_inside'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
