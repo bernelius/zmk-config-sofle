@@ -189,11 +189,11 @@
 
         layer_3 {
             bindings = <
-&trans     &kp F1       &kp F2      &kp F3        &kp F4        &kp F5       &mmv MOVE_UP     &kp F6   &kp F7         &kp F8         &kp F9          &kp F10   &kp EQUAL
-&trans     &trans       &trans      &kp LPAR      &kp RPAR      &trans       &mmv MOVE_DOWN   &kp F11  &kp HOME       &kp UP_ARROW   &kp PG_UP       &kp MINUS &kp PLUS
-&trans     &trans       &trans      &kp LBKT      &kp RBKT      &trans       &mmv MOVE_LEFT   &kp F12  &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp PLUS  &trans
-&trans     &trans       &trans      &kp LBRC      &kp RBRC      &trans       &mmv MOVE_RIGHT  &trans   &kp END        &kp INSERT     &kp PG_DOWN     &kp ENTER &trans
-&trans     &to 0        &trans      &trans        &trans        &trans       &mkp LCLK        &trans   &trans         &trans         &trans          &trans
+&trans     &kp F1       &kp F2      &kp F3        &kp F4        &kp F5       &mmv MOVE_UP     &kp F6   &kp F7         &kp F8         &kp F9            &kp F10    &kp EQUAL
+&trans     &trans       &trans      &kp LPAR      &kp RPAR      &trans       &mmv MOVE_DOWN   &kp F11  &kp HOME       &kp UP_ARROW   &kp PAGE_UP       &kp MINUS  &kp PLUS
+&trans     &trans       &trans      &kp LBKT      &kp RBKT      &trans       &mmv MOVE_LEFT   &kp F12  &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW   &kp PLUS   &trans
+&trans     &trans       &trans      &kp LBRC      &kp RBRC      &trans       &mmv MOVE_RIGHT  &trans   &kp END        &kp INSERT     &kp PAGE_DOWN     &kp ENTER  &trans
+&trans     &to 0        &trans      &trans        &trans        &trans       &mkp LCLK        &trans   &trans         &trans         &trans            &trans
             >;
             display-name = "fn";
         };
