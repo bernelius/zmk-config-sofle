@@ -219,7 +219,7 @@ layers:
   - F11
   - HOME
   - $$mdi:arrow-up-bold$$
-  - PG UP
+  - PgUp
   - {t: '-', s: _}
   - +
   - {t: '$$mdi:transfer$$', type: trans}
@@ -245,7 +245,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - END
   - Ins
-  - PG DOWN
+  - PgDn
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
