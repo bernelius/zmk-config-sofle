@@ -46,6 +46,16 @@
                 #binding-cells = <0>;
                 bindings = <&macro_tap &kp LPAR &kp RPAR &kp LEFT_ARROW>;
             };
+            brackets_inside: brackets_inside {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings = <&macro_tap &kp LBKT &kp RBKT &kp LEFT_ARROW>;
+            };
+            braces_inside: braces_inside {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings = <&macro_tap &kp LBRC &kp RBRC &kp LEFT_ARROW>;
+            };
         };
     keymap {
         compatible = "zmk,keymap";
@@ -66,7 +76,7 @@
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp N1           &kp N2          &parens_inside       &lbkt_rbkt       &lbrc_rbrc         &mmv MOVE_LEFT   &kp N6           &kp N7           &kp N8      &kp N9     &kp N0            &kp RIGHT_BRACKET
+&trans      &kp N1           &kp N2          &parens_inside   &brackets_inside &braces_inside     &mmv MOVE_LEFT   &kp N6           &kp N7           &kp N8      &kp N9     &kp N0            &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
 &trans      &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &kp RIGHT_SHIFT           &trans           &trans      &trans     &trans
             >;
@@ -80,7 +90,7 @@
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
 &trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
 &trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &to 0        &trans           &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&trans     &trans        &trans          &trans        &to 0         &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
             >;
 
         };
