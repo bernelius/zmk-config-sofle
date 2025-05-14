@@ -26,18 +26,6 @@
             #binding-cells = <0>;
             bindings = <&kp LPAR>, <&kp RPAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        },
-        lbkt_rbkt: leftbracket_rightbracket {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LBKT>, <&kp RBKT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        },
-        lbrc_rbrc: leftbrace_rightbrace {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LBRC>, <&kp RBRC>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
     keymap {
