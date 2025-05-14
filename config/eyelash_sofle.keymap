@@ -25,7 +25,19 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LPAR>, <&kp RPAR>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTRL|MOD_RCTRL)>;
+        };
+        lbkt_rbkt: leftbracket_rightbracket {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp RBKT>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTRL|MOD_RCTRL)>;
+        };
+        lbrc_rbrc: leftbrace_rightbrace {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC>, <&kp RBRC>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTRL|MOD_RCTRL)>;
         };
     };
     keymap {
@@ -47,9 +59,9 @@
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp N1           &kp N2          &lpar_rpar       &kp N4           &kp N5             &mmv MOVE_LEFT   &kp N6           &kp N7           &kp N8      &kp N9     &kp N0            &kp RIGHT_BRACKET
-&kp LSHIFT      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&trans      &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&trans      &kp N1           &kp N2          &lpar_rpar       &lbkt_rbkt       &lbrc_rbrc         &mmv MOVE_LEFT   &kp N6           &kp N7           &kp N8      &kp N9     &kp N0            &kp RIGHT_BRACKET
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
+&trans      &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &RIGHT_SHIFT           &trans           &trans      &trans     &trans
             >;
 
             display-name = "layer1";
