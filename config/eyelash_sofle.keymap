@@ -38,15 +38,15 @@
             #binding-cells = <0>;
             bindings = <&kp LBRC>, <&kp RBRC>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+            };
+        };
     macros {
-        parens_inside: parens_inside {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &kp LPAR &kp RPAR &kp LEFT_ARROW>;
-        }
-    };
-};
+            parens_inside: parens_inside {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                bindings = <&macro_tap &kp LPAR &kp RPAR &kp LEFT_ARROW>;
+            };
+        };
     keymap {
         compatible = "zmk,keymap";
 
