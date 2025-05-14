@@ -25,19 +25,19 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LPAR>, <&kp RPAR>;
-            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTRL|MOD_RCTRL)>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL)>;
         };
         lbkt_rbkt: leftbracket_rightbracket {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LBKT>, <&kp RBKT>;
-            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTRL|MOD_RCTRL)>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL)>;
         };
         lbrc_rbrc: leftbrace_rightbrace {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LBRC>, <&kp RBRC>;
-            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTRL|MOD_RCTRL)>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL)>;
         };
     };
     keymap {
