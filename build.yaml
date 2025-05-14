@@ -11,3 +11,4 @@ include:
     artifact-name: eyelash_sofle_studio_left
   - board: eyelash_sofle_left
     shield: settings_reset
+    artifact-name: eyelash_sofle_settings_reset
