@@ -95,7 +95,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
-  - {t: '{', s: '}'}
+  - {t: (, s: )}
   - '&lbkt_rbkt'
   - '&lbrc_rbrc'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
