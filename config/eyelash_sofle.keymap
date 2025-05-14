@@ -39,6 +39,7 @@
             bindings = <&kp LBRC>, <&kp RBRC>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+};
     keymap {
         compatible = "zmk,keymap";
 
