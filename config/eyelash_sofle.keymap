@@ -30,7 +30,7 @@
         compatible = "zmk,combos";
         combo_inside_parens {
             timeout-ms = <30>;
-            key-positions = <15 16>;
+            key-positions = <16 17>;
             bindings = <&parens_inside>;
         };
         compatible = "zmk,combos";
@@ -154,11 +154,11 @@
 
         layer0 {
             bindings = <
-&tilde_grave     &excl_one    &at_two        &hash_three      &dollar_four     &percent_five  &kp UP_ARROW     &caret_six   &amper_seven   &aster_eight   &lbkt_nine        &rbkt_zero   &kp MINUS
-&kp TAB          &kp Q        &kp W          &kp E            &kp R            &kp T          &kp DOWN_ARROW   &kp Y        &kp U          &kp I          &kp O             &kp P        &kp BSLH
-&mt LCTRL ESC    &kp A        &kp S          &kp D            &kp F            &kp G          &kp LEFT_ARROW   &kp H        &kp J          &kp K          &kp L             &kp SEMI     &kp APOS
-&kp LSHFT        &kp Z        &kp X          &kp C            &kp V            &kp B          &kp RIGHT_ARROW  &kp N        &kp M          &kp COMMA      &kp DOT           &kp FSLH     &tog 1
-&trans           &to 1        &mo 3          &kp LEFT_ALT     &kp LEFT_GUI     &kp LSHFT      &kp ENTER        &kp SPACE    &kp BACKSPACE  &to 2          &kp RIGHT_SHIFT   &kp DELETE
+&tilde_grave     &excl_one    &at_two        &hash_three      &dollar_four     &percent_five  &kp UP_ARROW     &caret_six   &amper_seven   &aster_eight   &lbkt_nine    &rbkt_zero   &kp MINUS
+&kp TAB          &kp Q        &kp W          &kp E            &kp R            &kp T          &kp DOWN_ARROW   &kp Y        &kp U          &kp I          &kp O         &kp P        &kp BSLH
+&mt LCTRL ESC    &kp A        &kp S          &kp D            &kp F            &kp G          &kp LEFT_ARROW   &kp H        &kp J          &kp K          &kp L         &kp SEMI     &kp APOS
+&kp LSHFT        &kp Z        &kp X          &kp C            &kp V            &kp B          &kp RIGHT_ARROW  &kp N        &kp M          &kp COMMA      &kp DOT       &kp FSLH     &mo 3
+&trans           &to 3        &mo 3          &kp LEFT_ALT     &kp LEFT_GUI     &kp LSHFT      &to 2            &kp SPACE    &kp BACKSPACE  &kp DELETE     &mo 3         &kp DELETE
                  >;
 
             display-name = "floor";
@@ -166,10 +166,10 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
+&trans      &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
 &trans      &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &mmv MOVE_LEFT   &kp N6           &kp N7           &kp HOME    &kp N9     &kp N0            &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END     &kp F11    &kp F12           &trans
+&trans      &trans           &trans          &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans           &trans           &kp END     &kp F11    &kp F12           &trans
 &trans      &to 0            &trans          &trans           &trans           &trans             &mkp LCLK        &kp RIGHT_SHIFT  &trans           &trans      &trans     &trans
             >;
 
@@ -178,11 +178,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &trans        &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &trans      &trans     &trans       &trans
-&trans     &to 0         &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &trans       &mmv MOVE_UP     &trans            &trans            &trans              &trans              &trans      &trans
+&trans        &trans          &trans          &trans        &trans          &trans       &mmv MOVE_DOWN   &rgb_ug RGB_EFF   &trans            &trans              &trans              &trans      &trans
+&trans        &out OUT_USB    &out OUT_BLE    &trans        &trans          &trans       &mmv MOVE_LEFT   &rgb_ug RGB_HUI   &rgb_ug RGB_SAI   &rgb_ug RGB_BRI     &rgb_ug RGB_SPI     &trans      &trans
+&trans        &trans          &trans          &trans        &trans          &trans       &mmv MOVE_RIGHT  &rgb_ug RGB_HUD   &rgb_ug RGB_SAD   &rgb_ug RGB_BRD     &rgb_ug RGB_SPD     &trans      &trans
+&trans        &to 0           &trans          &trans        &trans          &trans       &mkp LCLK        &rgb_ug RGB_TOG   &trans            &trans              &trans              &trans
             >;
             display-name = "BLE/RGB";
         };
