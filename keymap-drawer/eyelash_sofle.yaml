@@ -7,7 +7,7 @@ layers:
   - {t: '#', s: '3'}
   - {t: $, s: '4'}
   - {t: '%', s: '5'}
-  - rgb ug RGB BRI
+  - RGB BRI
   - {t: ^, s: '6'}
   - {t: '&', s: '7'}
   - {t: '*', s: '8'}
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - rgb ug RGB BRD
+  - RGB BRD
   - Y
   - U
   - I
@@ -33,7 +33,7 @@ layers:
   - D
   - F
   - '&mt mo 3 G'
-  - rgb ug RGB HUD
+  - RGB HUD
   - '&mt mo 3 H'
   - J
   - K
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - rgb ug RGB HUI
+  - RGB HUI
   - N
   - M
   - {t: ',', s: <}
