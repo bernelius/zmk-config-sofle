@@ -32,9 +32,9 @@ layers:
   - S
   - D
   - F
-  - '&mt mo 3 G'
+  - {t: G, h: fn}
   - RGB HUD
-  - '&mt mo 3 H'
+  - {t: H, h: fn}
   - J
   - K
   - L
@@ -227,9 +227,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - F12
+  - {t: F12, type: held alternate}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -247,7 +247,7 @@ layers:
   - Ins
   - PgDn
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {type: held}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: floor, h: toggle}
   - {type: held alternate}
