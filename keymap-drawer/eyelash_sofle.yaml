@@ -7,7 +7,7 @@ layers:
   - {t: '#', s: '3'}
   - {t: $, s: '4'}
   - {t: '%', s: '5'}
-  - $$mdi:arrow-up-bold$$
+  - rgb ug RGB BRI
   - {t: ^, s: '6'}
   - {t: '&', s: '7'}
   - {t: '*', s: '8'}
@@ -20,7 +20,7 @@ layers:
   - E
   - R
   - T
-  - $$mdi:arrow-down-bold$$
+  - rgb ug RGB BRD
   - Y
   - U
   - I
@@ -32,9 +32,9 @@ layers:
   - S
   - D
   - F
-  - G
-  - $$mdi:arrow-left-bold$$
-  - H
+  - '&mt mo 3 G'
+  - rgb ug RGB HUD
+  - '&mt mo 3 H'
   - J
   - K
   - L
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:arrow-right-bold$$
+  - rgb ug RGB HUI
   - N
   - M
   - {t: ',', s: <}
