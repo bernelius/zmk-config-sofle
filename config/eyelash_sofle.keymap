@@ -155,7 +155,7 @@
             bindings = <&macro_tap &kp LBRC &kp RBRC &kp LEFT_ARROW>;
         };
         tags_inside: tags_inside {
-            compatible = "zmk, behavior-macro";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
         };
