@@ -127,7 +127,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {type: held}
   - {t: '0', s: )}
-  - '&BACKSPACE'
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   BLE/RGB:
