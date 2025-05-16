@@ -166,14 +166,14 @@
 
         layer_1 {
             bindings = <
-&trans      &kp F1        &kp F2       &kp F3       &kp F4       &kp F5      &mmv MOVE_UP     &kp F6           &kp F7       &kp F8      &kp F9     &kp F10       &trans
-&trans      &kp GRAVE     &mkp LCLK    &mkp MCLK    &mkp RCLK    &mkp MB4    &mmv MOVE_DOWN   &kp PG_UP        &kp END      &kp UP      &kp HOME   &kp MINUS     &kp EQUAL
-&trans      &kp N1        &kp N2       &kp N3       &kp N4       &kp N5      &mmv MOVE_LEFT   &kp N6           &kp N7       &kp HOME    &kp N9     &kp N0        &kp RIGHT_BRACKET
-&trans      &trans        &trans       &trans       &trans       &trans      &mmv MOVE_RIGHT  &trans           &trans       &kp END     &kp F11    &kp F12       &trans
-&trans      &to 0         &trans       &trans       &trans       &trans      &mkp LCLK        &kp RIGHT_SHIFT  &trans       &trans      &trans     &trans
+&trans      &trans        &trans       &trans       &trans       &trans      &mmv MOVE_UP     &trans           &trans       &trans      &trans     &trans        &trans
+&trans      &trans        &trans       &trans       &trans       &trans      &mmv MOVE_DOWN   &trans           &trans       &trans      &trans     &trans        &trans
+&trans      &trans        &trans       &trans       &trans       &trans      &mmv MOVE_LEFT   &trans           &trans       &trans      &trans     &trans        &trans
+&trans      &trans        &trans       &trans       &trans       &trans      &mmv MOVE_RIGHT  &trans           &trans       &trans      &trans     &trans        &trans
+&trans      &trans        &trans       &trans       &trans       &trans      &mkp LCLK        &trans           &trans       &trans      &trans     &trans
             >;
 
-            display-name = "func";
+            display-name = "layer1";
         };
 
         layer_2 {
@@ -198,6 +198,18 @@
             >;
 
             display-name = "fn";
+        };
+
+        layer_4 {
+            bindings = <
+&trans      &trans        &trans       &trans       &trans       &trans      &mmv MOVE_UP     &trans           &trans       &trans      &trans     &trans        &trans
+&trans      &trans        &trans       &trans       &trans       &trans      &mmv MOVE_DOWN   &trans           &trans       &trans      &trans     &trans        &trans
+&trans      &trans        &trans       &trans       &trans       &trans      &mmv MOVE_LEFT   &trans           &trans       &trans      &trans     &trans        &trans
+&trans      &trans        &trans       &trans       &trans       &trans      &mmv MOVE_RIGHT  &trans           &trans       &trans      &trans     &trans        &trans
+&trans      &trans        &trans       &trans       &trans       &trans      &mkp LCLK        &trans           &trans       &trans      &trans     &trans
+            >;
+
+            display-name = "clear";
         };
     };
 };
