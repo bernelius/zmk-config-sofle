@@ -31,11 +31,11 @@ layers:
   - A
   - R
   - S
-  - T
-  - {t: G, h: fn}
+  - {t: T, h: fn}
+  - G
   - RGB HUD
-  - {t: M, h: fn}
-  - N
+  - M
+  - {t: N, h: fn}
   - E
   - I
   - O
@@ -226,11 +226,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: '"', type: held}
+  - {t: ']', s: '}', type: held}
+  - '"'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '-', s: _, type: held alternate}
-  - $$mdi:arrow-left-bold$$
+  - {t: '-', s: _}
+  - {t: '$$mdi:arrow-left-bold$$', type: held alternate}
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - +
