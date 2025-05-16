@@ -158,7 +158,7 @@
             compatible = "zmk, behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
-        }
+        };
     };
     keymap {
         compatible = "zmk,keymap";
