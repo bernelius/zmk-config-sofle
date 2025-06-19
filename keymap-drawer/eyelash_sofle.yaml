@@ -58,7 +58,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - {t: _, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: BLE/RGB, h: toggle}
   - {t: '$$mdi:keyboard-space$$', h: numpad}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -196,13 +196,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   fn:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '~', s: '`'}
   - F1
   - F2
   - F3
   - F4
   - F5
-  - RGB BRI
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - F6
   - F7
   - F8
@@ -326,8 +326,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [34, 35, 36]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
 - p: [16, 17]
   k: '&parens_inside'
 - p: [29, 30]
