@@ -34,7 +34,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <90>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&mo>, <&kp>;
@@ -45,7 +45,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <90>;
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&mo>, <&kp>;
@@ -54,12 +54,12 @@
         };
     };
     combos {
-        compatible = "zmk,combos";
-        combo_enter {
-            timeout-ms = <30>;
-            key-positions = <34 35 36>;
-            bindings = <&kp ENTER>;
-        };
+        // compatible = "zmk,combos";
+        // combo_enter {
+        //     timeout-ms = <30>;
+        //     key-positions = <34 35 36>;
+        //     bindings = <&kp ENTER>;
+        // };
         compatible = "zmk,combos";
         combo_inside_parens {
             timeout-ms = <30>;
@@ -202,7 +202,7 @@
 &kp TAB          &kp Q        &kp W          &kp F            &kp P            &kp B                 &rgb_ug RGB_BRD   &kp J        &kp L          &kp U          &kp Y         &kp SEMI     &kp BSLH
 &mt LCTRL ESC    &kp A        &kp R          &kp S            &hml 3 T         &kp G                 &rgb_ug RGB_HUD   &kp M        &hmr 3 N       &kp E          &kp I         &kp O        &kp APOS
 &kp LSHFT        &kp Z        &kp X          &kp C            &kp D            &kp V                 &rgb_ug RGB_HUI   &kp K        &kp H          &kp COMMA      &kp DOT       &kp FSLH     &mo 3
-&trans           &to 3        &trans         &kp LEFT_ALT     &kp LEFT_GUI     &mt LSHFT UNDERSCORE  &to 2             &llt 1 SPACE &kp BACKSPACE  &kp DELETE     &trans        &trans
+&trans           &to 3        &trans         &kp LEFT_ALT     &kp LEFT_GUI     &mt LSHFT ENTER       &to 2             &llt 1 SPACE &kp BACKSPACE  &kp DELETE     &trans        &trans
                  >;
 
             display-name = "floor";
@@ -234,11 +234,11 @@
 
         layer_3 {
             bindings = <
-&trans     &kp F1       &kp F2      &kp F3        &kp F4        &kp F5            &rgb_ug RGB_BRI     &kp F6      &kp F7         &kp F8         &kp F9            &kp F10    &kp F11 
-&trans     &trans       &trans      &kp LPAR      &kp RPAR      &kp APOS          &mmv MOVE_DOWN   &kp EQUAL   &kp HOME       &kp UP_ARROW   &kp PAGE_UP       &kp MINUS  &kp F12
-&trans     &trans       &trans      &kp LBKT      &kp RBKT      &kp DOUBLE_QUOTES &mmv MOVE_LEFT   &kp MINUS   &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW   &kp PLUS   &trans
-&trans     &trans       &trans      &kp LBRC      &kp RBRC      &kp SEMI          &mmv MOVE_RIGHT  &kp BSLH    &kp END        &kp INSERT     &kp PAGE_DOWN     &kp ENTER  &trans
-&trans     &to 0        &trans      &trans        &trans        &trans            &mkp LCLK        &trans      &trans         &trans         &trans            &trans
+&tilde_grave &kp F1       &kp F2      &kp F3        &kp F4        &kp F5            &mmv MOVE_UP     &kp F6      &kp F7         &kp F8         &kp F9            &kp F10    &kp F11 
+&trans       &trans       &trans      &kp LPAR      &kp RPAR      &kp APOS          &mmv MOVE_DOWN   &kp EQUAL   &kp HOME       &kp UP_ARROW   &kp PAGE_UP       &kp MINUS  &kp F12
+&trans       &trans       &trans      &kp LBKT      &kp RBKT      &kp DOUBLE_QUOTES &mmv MOVE_LEFT   &kp MINUS   &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW   &kp PLUS   &trans
+&trans       &trans       &trans      &kp LBRC      &kp RBRC      &kp SEMI          &mmv MOVE_RIGHT  &kp BSLH    &kp END        &kp INSERT     &kp PAGE_DOWN     &kp ENTER  &trans
+&trans       &to 0        &trans      &trans        &trans        &trans            &mkp LCLK        &trans      &trans         &trans         &trans            &trans
             >;
 
             display-name = "fn";
